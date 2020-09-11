@@ -1,20 +1,8 @@
-body{
-	width:100%; 
-	text-align:center; 
-  }
-  #wrap{ 
-	width: 90%;	   
-	margin: 0 auto;   
-	text-align:left;  
-	background: #f4f7f6;
-  }
-img{
-	width: 200px;	
-	height: 100px;
-	position: fixed;
-	top:20px;
-	left:118px;
-	}
+@font-face {
+	font-family: 'MyFont';
+	src: url(../dist/font/Lombok\ Font.otf);
+}
+
 label {
 display: block;
 margin-bottom: 7px;
@@ -26,22 +14,18 @@ textarea {
 margin-bottom: 20px;
 padding: 10px;
 font-size: 86%;
-border: 1px solid rgb(0, 102, 255);
+border: 1px solid #ddd;
 border-radius: 3px;
 background: #fff;
 }
 
 input[type="text"] {
 width: 100%;
-background-color:rgb(255, 255, 255);
-border:#006eff;
 }
 textarea {
 width: 100%;
 max-width: 100%;
-height: 800px;
-background-color:rgb(255, 255, 255);
-border:#f4f7f6;
+height: 250px;
 }
 input[type="submit"] {
 appearance: none;
@@ -53,11 +37,11 @@ line-height: 1.0em;
 cursor: pointer;
 border: none;
 border-radius: 5px;
-background-color: #6ad2da;
+background-color: #53ccc6;
 }
 input[type=submit]:hover,
 button:hover {
-background-color: #6ad2da;
+background-color: #53ccc6;
 }
 
 hr {
@@ -89,9 +73,7 @@ line-height: 1.6em;
 }
 
 
-/*-----------------------------------
-掲示板部分
------------------------------------*/
+
 
 article {
 margin-top: 20px;
@@ -111,9 +93,9 @@ left: 20px;
 display: block;
 content: "";
 border-top: none;
-border-left: 7px solid #f4f7f6;
-border-right: 7px solid #f4f7f6;
-border-bottom: 10px solid rgb(255, 0, 0)
+border-left: 7px solid #f7f7f7;
+border-right: 7px solid #f7f7f7;
+border-bottom: 10px solid #fff;
 }
 .info {
 	margin-bottom: 10px;
@@ -121,7 +103,7 @@ border-bottom: 10px solid rgb(255, 0, 0)
 .info h2 {
 	display: inline-block;
 	margin-right: 10px;
-	color: rgb(71, 71, 71);
+	color: #222;
 	line-height: 1.6em;
 	font-size: 86%;
 }
@@ -139,13 +121,11 @@ article p {
 
 input[type="text"] {
 	width: 100%;
-	background-color:rgb(255, 255, 255);
 }
 textarea {
 	width: 100%;
 	max-width: 100%;
-	height: 800px;
-	background-color:rgb(255, 255, 255);
+	height: 200px;
 }
 
 
@@ -173,12 +153,12 @@ html,body {
 body {
 	font-size: 14px;
 	font-family: 'Lato', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
-	background:#f4f7f6;
+	background:  #f4f7f6;
 	-webkit-text-size-adjust: 100%;
 }
 
 #main {
-	background:#f4f7f6 ;
+	background: #f4f7f6;
 }
 #main-in {
 	padding-left: 260px;
@@ -193,12 +173,8 @@ body {
 
 /* main-visual */
 #main-visual {
-	background: #808080;
-	background: -webkit-linear-gradient(-45deg, #f4f7f6, #f4f7f6);
-	background: -moz-linear-gradient(-45deg, #f4f7f6, #f4f7f6);
-	background: -ms-linear-gradient(-45deg, #f4f7f6, #f4f7f6);
-	background: -o-linear-gradient(-45deg, #f4f7f6, #f4f7f6);
-	background: linear-gradient(-45deg, #f4f7f6, #f4f7f6);
+	background: #f4f7f6;
+
 
 
 	height: 400px;
@@ -215,24 +191,25 @@ body {
 }
 #main-visual h2 {
 	font-size: 180%;
-	color: rgb(0, 0, 0);
+	color: rgb(44, 44, 44);
 }
 h3 {
 	font-size: 131%;
 	margin-bottom: .7em;
 }
 #copyright a {
-	color: rgb(255, 255, 255);
+	color: #666;
 	text-decoration: none;
 }
 #copyright a:hover {
 	text-decoration: underline;
 }
 
-/* ここから */
+
 #global-head {
 	position: fixed;
 	color: #000000;
+	font-family:MyFont;
 	width: 260px;
 	text-align: center;
 	padding-top: 60px;
@@ -245,8 +222,8 @@ h3 {
 	width: 260px;
 	height: 100%;
 	position: fixed;
-	color: #757575;
-	background: #f4f7f6;
+	color: #474747;
+	background:  #f4f7f6;
 	text-align: center;
 }
 
@@ -259,7 +236,7 @@ h3 {
 }
 
 #global-nav a {
-	color: #000000;
+	color: #2b2b2b;
 	text-decoration: none;
 	display: block;
 	padding: 15px 0;
@@ -270,7 +247,7 @@ h3 {
 #global-nav .sub-menu.is-active > a,
 #global-nav a:hover {
 	color: #fff;
-	background: #a1a1a1;
+	background: #535353;
 }
 
 #global-nav .sub-menu-nav a,
@@ -292,8 +269,8 @@ h3 {
 	vertical-align: middle;
 	width: 8px;
 	height: 8px;
-	border-top: 1px solid #000000;
-	border-right: 1px solid #000000;
+	border-top: 1px solid #313131;
+	border-right: 1px solid #313131;
 	-moz-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
@@ -303,7 +280,7 @@ h3 {
 /* sub-menu */
 #global-nav .sub-menu-nav {
 	position: fixed;
-	background: #5c5c5c;
+	background: #525252;
 	color: #fff;
 	top: 0;
 	padding-top: 90px;
@@ -324,7 +301,7 @@ h3 {
 	color: #fff;
 }
 #global-nav .sub-menu-nav a:hover {
-	color: #000000;
+	color: #494949;
 	background: #fff;
 }
 
@@ -346,7 +323,7 @@ h3 {
 	height: 2px;
 	left: 0;
 	display: block;
-	background: #000000;
+	background: #424242;
 	position: absolute;
 	-webkit-transition: .35s ease-in-out;
 	-moz-transition: .35s ease-in-out;
@@ -386,7 +363,7 @@ h3 {
 	#global-head {
 		width: 100%;
 		padding: 10px;
-		background: rgb(255, 255, 255);
+		background: rgba(255,255,255,.8);
 		display: -webkit-flex;
 		display: flex;
 	}
@@ -398,13 +375,13 @@ h3 {
 		top: 0;
 		height: 100%;
 		width: 300px;
-		color: #000000;
+		color: #333333;
 		background: #fff;
 		-webkit-transition: .35s ease-in-out;
 		transition: .35s ease-in-out;
 	}
 
-	/* サブメニューは開けない */
+	
 	#global-nav .sub-menu-head:after,
 	#global-nav .sub-menu-nav {
 		display: none;
@@ -458,13 +435,6 @@ h3 {
 }
 
 @media screen and (max-width: 400px) {
-	img{
-		width: 200px;	
-		height: 100px;
-		position: fixed;
-		top:5px;
-		left:2px;
-		}
 	#sidebar {
 		right: -200px;
 		width: 200px;

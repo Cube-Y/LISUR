@@ -51,7 +51,7 @@ if( !empty($_POST['btn_submit']) ) {
 			
 			fclose( $file_handle);
 	
-			$success_message = '作品を投稿しました。目が疲れたら休んでくださいね。';
+			$success_message = '記事をを投稿しました。';
         }
 
         }
@@ -94,14 +94,16 @@ if( $file_handle = fopen( FILENAME,'r') ) {
     <meta name="twitter:site" content="@CubeY_1120" />
     <meta property="og:url" content="http://lisur.hacklife.work" />
     <meta property="og:title" content="LISUR" />
-    <meta property="og:description" content="創作する。そこから生まれるものがある。"/>
+    <meta property="og:description" content="LISURでもっとシンプルに交じろう。"/>
     <meta property="og:image" content="http://lisur.hacklife.work/dist/images/ogp.png" />
+
 </head>
 
 <body>
-<div id="wrap">
+
     <header id="global-head">
-        <img src="dist/images/logo.png">
+        <h1 id="brand-logo">L I S U R</h1>
+        <p>BETA</p>
     </header>
 
     <div id="nav-toggle">
@@ -115,8 +117,8 @@ if( $file_handle = fopen( FILENAME,'r') ) {
     <aside id="sidebar">
         <nav id="global-nav">
             <ul>
-            <li><a href="index.php">作品を読む</a></li>
-            <li><a href="main.php">執筆する</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="main.php">Post</a></li>
             </ul>
         </nav>
     </aside>
@@ -124,7 +126,7 @@ if( $file_handle = fopen( FILENAME,'r') ) {
     <main id="main">
         <div id="main-in">
             <div id="main-visual">
-                <h2>作品を執筆する</h2>
+                <h2>Post</h2>
             </div>
 
             <section class="inner">
@@ -152,19 +154,24 @@ if( $file_handle = fopen( FILENAME,'r') ) {
                                 <label for="message">本文</label>
                                 <textarea id="message" name="message"></textarea>
                             </div>
-                            <input type="submit" name="btn_submit" value="作品を投稿する">
+                            <input type="submit" name="btn_submit" value="投稿する">
                         </form>
 
 
                     </div>
                 </section>
             </section>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-<script type="text/javascript" src="dist/main.js"></script>
 
-</div>
+        </div><!-- /#main-in -->
+    </main>
+
+    <div id="overlay"></div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/main.js"></script>
+
 </body>
-
-
 
 </html>

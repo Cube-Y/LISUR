@@ -51,20 +51,21 @@ if( $file_handle = fopen( FILENAME,'r') ) {
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
     
-
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@CubeY_1120" />
     <meta property="og:url" content="http://lisur.hacklife.work" />
     <meta property="og:title" content="LISUR" />
-    <meta property="og:description" content="創作する。そこから生まれるものがある。"/>
+    <meta property="og:description" content="LISURでもっとシンプルに交じろう。"/>
     <meta property="og:image" content="http://lisur.hacklife.work/dist/images/ogp.png" />
+
 
 </head>
 
 <body>
-<div id="wrap">
+
     <header id="global-head">
-        <img src="dist/images/logo.png">
+        <h1 id="brand-logo">L I S U R</h1>
+        <p>BETA</p>
     </header>
 
     <div id="nav-toggle">
@@ -78,8 +79,8 @@ if( $file_handle = fopen( FILENAME,'r') ) {
     <aside id="sidebar">
         <nav id="global-nav">
             <ul>
-                <li><a href="index.php">作品を読む</a></li>
-                <li><a href="main.php">執筆する</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="main.php">Post</a></li>
             </ul>
         </nav>
     </aside>
@@ -87,7 +88,7 @@ if( $file_handle = fopen( FILENAME,'r') ) {
     <main id="main">
         <div id="main-in">
         <div id="main-visual">
-            <h2>作品を読む</h2>
+            <h2>Home</h2>
         </div>
 
     <section class="inner">
@@ -124,9 +125,16 @@ if( $file_handle = fopen( FILENAME,'r') ) {
                 </section>
             </section>
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+        </div><!-- /#main-in -->
+    </main>
+
+    <div id="overlay"></div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script type="text/javascript" src="dist/main.js"></script>
-</div>
+
 </body>
 
 </html>
