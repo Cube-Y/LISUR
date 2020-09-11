@@ -51,7 +51,7 @@ if( !empty($_POST['btn_submit']) ) {
 			
 			fclose( $file_handle);
 	
-			$success_message = '記事をを投稿しました。';
+			$success_message = '投稿しました。';
         }
 
         }
