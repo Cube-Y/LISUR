@@ -100,7 +100,7 @@ if( $file_handle = fopen( FILENAME,'r') ) {
 </head>
 
 <body>
-
+<div id="wrap">
     <header id="global-head">
         <h1 id="brand-logo">L I S U R</h1>
         <p>BETA</p>
@@ -171,7 +171,7 @@ if( $file_handle = fopen( FILENAME,'r') ) {
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
     <script type="text/javascript" src="dist/main.js"></script>
-
+</div>
 </body>
 
 </html>

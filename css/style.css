@@ -445,3 +445,15 @@ h3 {
 		transform: translate3d(-200px,0,0);
 	}
 }
+
+
+/*センタリングの実装*/
+body{
+	width:100%;
+	text-align: center;
+}
+#wrap{
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+}
