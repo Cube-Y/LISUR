@@ -1,4 +1,4 @@
 # LISUR
 NewWebService
 
-Let's go <a href="http://lisur.hacklife.work">LISUR</a>!
+Let's go <a href="https://lisur-php-app.herokuapp.com">LISUR</a>!
