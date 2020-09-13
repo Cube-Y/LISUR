@@ -3,6 +3,7 @@
 	src: url(../dist/font/Lombok\ Font.otf);
 }
 
+
 label {
 display: block;
 margin-bottom: 7px;
@@ -448,6 +449,7 @@ h3 {
 
 
 /*センタリングの実装*/
+@media print, screen and (min-width: 640px) {
 body{
 	width:100%;
 	text-align: center;
@@ -456,4 +458,5 @@ body{
 	width: 80%;
 	margin: 0 auto;
 	text-align: left;
+}
 }
